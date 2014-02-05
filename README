@@ -1,0 +1,31 @@
+Steven Chiu
+
+Run make
+execute ./mond
+
+This program takes the following commands:
+
+add <-s || -p PID || -e executable > [-i interval] [-f logfile]
+   -s indicates system statistics.
+   if -i and -f are not specified, will use default values if set.
+
+set interval <numberInMicroseconds>
+   Set default logging interval.
+
+set logfile <logFileName>
+   Set default output file.
+
+listactive
+   Displays a table of active process.
+
+listcompleted
+   Displays a table of completed process.
+
+remove <-s || -t threadID>
+   Cleanly terminates the thread indicated by threadID or the system thread if -s was specified.
+
+kill <processID>
+   Terminates all thread associated with the process PID and terminates the process, if possible.
+
+exit
+   Terminates the program.
